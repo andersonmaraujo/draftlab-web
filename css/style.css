@@ -1,0 +1,365 @@
+/*PADRÕES*/
+h1{font:lighter 45pt 'Roboto', sans-serif;}
+.wrapper{margin:0 auto;}
+section{margin: 150px 0;}
+a img{ border: 0; }
+*{ padding:0;margin:0; }
+html, body{ width:100%;	}
+
+body{
+	background: #000;	
+	font-family:'Roboto', sans-serif;
+	font-size: 18px;
+	color: #FFF;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-ms-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	
+	-moz-text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
+	-ms-text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
+	
+	-webkit-text-stroke: 1px transparent;
+	-moz-text-stroke: 1px transparent;
+	-ms-text-stroke: 1px transparent;
+	text-stroke: 1px transparent;	
+}
+header{
+	width:auto;
+	z-index: 9;
+}
+header img{z-index: 9;position: relative;}
+header div.wrapper{
+	z-index: 9;	
+	top:0;	
+	position: absolute;
+	margin-top: 5%;	
+}
+
+img.language{
+	position: absolute!important;
+	z-index: 10;
+	right:0;
+}
+
+/*NAV STYLES*/
+nav{
+	float:right;
+}
+nav ul{	
+	background: #000;	
+}
+nav ul li{
+	display: inline-table;
+	padding:10px;
+	opacity:0.90;
+	-moz-opacity: 0.90;
+	filter: alpha(opacity=90);	
+}
+nav ul li a{
+	color: #FFF;
+	text-decoration: none;
+	font:normal 13px Calibri, Arial;	
+}
+#menu-flutuante{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	z-index: 0;
+	background: #000;
+	border-top: 1px solid #111;	
+}
+#menu-flutuante ul li{
+	padding:10px;
+}
+#menu-flutuante img{
+	width:120px;
+	float: left;
+	margin-top: 15px;
+}
+#menu-flutuante .fb-like{
+	margin: 15px 0 0 30px;
+	float: left;
+}
+
+#menu-flutuante span{
+	font-weight: bold;	
+	color: #ff0000;	
+}
+/*FIGURE STYLES*/
+figure img{width:100%;}
+
+/*DRAFTLAB PAGE STYLES*/
+#draftlab h1, #servicos h1, #parceiros h1, #contato h1{
+	margin-bottom: 40px;
+}
+#draftlab p.mobile, #contato p.mobile{
+	display: none;
+}
+#draftlab p{	
+	font-family: 'Roboto', sans-serif;
+	width:30%;
+	display: inline-table;	
+	vertical-align: top;	
+}
+#draftlab p:nth-child(2n+1){
+	margin: 0 4%;	
+}
+
+/*SERVICES STYLES*/
+#servicos ul li{
+	display: inline-table;
+	width:48%;	
+	background: #090909;
+	margin-bottom: 2%;
+	font-family:'Roboto', sans-serif;	
+}
+#servicos ul li.left{
+	margin-right: 2%;	
+}
+#servicos ul li img{
+	float:left;
+	margin: 4% 4% 5% 4%;	
+}
+ #servicos ul li h2{
+ 	margin: 4% 0 1% 0;
+ 	font-weight: bolder;
+ 	font-size: 22px;
+ }
+ #servicos ul li p{
+ 	margin:0 4% 4% 0; 
+ 	font-size: 16px;
+ }
+
+/*PARCEIROS STYLES*/
+#parceiros{
+	text-align: center!important;
+}
+#parceiros h1{
+	width:100%;
+	text-align: left;
+}
+#parceiros p.destaque{
+	width: 100%;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-weight: lighter;
+	font-size: 30px;
+	margin-bottom: 80px;
+}
+#parceiros ul li{
+	display: inline-table;	
+	margin:0 20px 30px 20px;
+}
+
+/*CONTATO STYLES*/
+#contato p a.facebook{
+	display: block;
+	padding:10px;
+	width:268px;
+	color: #0071bc;
+}
+#contato p a.facebook:hover{
+	color: #FFF;
+	background: #0071bc;
+}
+#contato p a.twitter{
+	display: block;
+	padding:10px;
+	width:228px;	
+	color:#29abe2;
+}
+#contato p a.twitter:hover{
+	color: #FFF;
+	background: #29abe2;
+}
+#contato p a.google{
+	display: block;
+	padding:10px;
+	width:70px;	
+	color:#ed1c24;	
+}
+#contato p a.google:hover{
+	background:#ed1c24;
+	color: #FFF; 
+}
+#contato p{
+	font-family: 'Roboto', sans-serif;
+	width:30%;
+	display: inline-table;
+	vertical-align: top;
+}
+#contato p em{
+	font-style: normal;
+}
+#contato p:nth-child(2n+1){
+	margin: 0 4%;	
+}
+
+
+/*MEDIA QUERIES*/
+@media all and (min-width: 1280px){
+	.wrapper{
+		width:1200px;		
+	}
+	header .wrapper{
+		left:50%;
+		margin-left:-600px;
+	}
+
+}
+@media all and(max-width: 1279px) {
+	.wrapper{
+		width:90%!important;
+		margin: 0 auto;
+	}
+	header .wrapper{
+		margin: 5% 5% 0% 5%!important;
+	}
+	#parceiros ul li{
+		margin: 0 5px 10px 5px;
+	}
+	#parceiros p.destaque{
+		font-size: 25px;
+	}
+	#servicos ul li h2{
+		font-size: 21px;
+	}
+	#servicos ul li p{
+		font-size: 16px;
+		line-height: 22px;
+	}
+	h1{ font-size: 40pt; }
+	img.language{
+		display: none;
+	}
+}
+@media all and (max-width: 1024px){
+	#parceiros p.destaque{
+		font-size: 20px;
+	}
+	#servicos ul li h2{
+		font-size: 20px;
+	}
+	#servicos ul li p{
+		font-size: 14px;		
+	}
+	h1{ font-size: 35pt; }	
+}
+@media all and(max-width:960px){
+	#servicos ul li h2{
+		font-size: 15px;
+	}
+	#servicos ul li img{
+		margin:10% 4% 10% 4%;
+	}
+	h1{ font-size: 30pt; }
+}
+@media all and(max-width:768px){	
+	#servicos ul li img{
+		margin: 3.5%;
+	}
+	#servicos ul li{
+		width:100%;
+	}
+	h1{ font-size: 25pt; }
+	#parceiros ul{
+		width: 100%!important;
+	}
+	#parceiros ul li{
+		margin: 0 1px!important;
+		display: inline;
+	}
+	#parceiros ul li img{
+		width:90px;
+	}
+}
+@media all and (max-width:480px){
+	h1{ font-size: 15pt; }	
+	section{
+		margin:0;
+	}
+	.wrapper{
+		margin: 60px auto 30px auto;
+	}
+	#draftlab h1, #servicos h1, #parceiros h1, #contato h1{
+		margin-bottom: 30px;
+	}
+	header nav, #menu-flutuante{
+		display: none;
+	}
+	#draftlab p, #contato p{
+		display: none;
+	}
+	#draftlab p.mobile, #contato p.mobile{
+		display:block;
+		width:100%;
+		text-align: center;
+		margin: 0 auto;
+	}
+	#contato p.mobile{
+		margin-bottom: 10px;
+	}	
+	#servicos ul li img{
+		display: none;
+	}
+	#servicos ul li{
+		width:100%;		
+	}	
+	#servicos ul li p, #servicos ul li h2{
+		margin-left: 4%;
+	}
+	#parceiros p.destaque{
+		font-size: 15px;
+		margin-bottom: 20px;
+	}
+	#parceiros ul li{
+		margin: 0 1px!important;
+		display: inline;
+	}
+	#parceiros ul li img{
+		width:90px;
+	}	
+}
+
+/**iPad Styles _o/ \o/ \o_ _o_ \o/*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+	.wrapper{
+		width:90%!important;
+		margin: 0 auto;		
+	}
+	header .wrapper{
+		margin: 5% 5% 0% 5%!important;
+	}
+	h1{ font-size: 25pt; }
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+	.wrapper{
+		width:90%!important;
+		margin: 0 auto;		
+	}
+	header .wrapper{
+		margin: 5% 5% 0% 5%!important;
+	}
+	#servicos ul li img{
+		margin: 3.5%;
+	}
+	#servicos ul li{
+		width:100%;
+	}
+	h1{ font-size: 25pt; }
+	#parceiros ul{
+		width: 100%!important;
+	}
+	#parceiros ul li{
+		margin: 0 1px!important;
+		display: inline;
+	}
+	#parceiros ul li img{
+		width:90px;
+	}
+	#menu-flutuante .fb-follow{
+		display: none;
+	}
+}
