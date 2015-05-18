@@ -1,0 +1,86 @@
+{
+   "listaEventos": [
+      {
+         "idEvento": 1,
+         "idRepresentante": 1,
+         "titulo": "Titulo do evento1",
+         "tipo": 0,
+         "local": {
+            "latitude": -23.540333,
+            "longitude": -46.553078,
+            "rua": "Rua Cantagalo, 1900",
+            "cep": "03319000",
+            "cidade": "São Paulo",
+            "pais": "Brasil",
+            "bairro": "Tatuapé",
+            "estado": "SP"
+         },
+         "inicio": "2015-05-29 10:00:00",
+         "fim": "2015-05-29 15:00:00",
+         "diaTodo": 0,
+         "url": "www.evento1.com.br",
+         "descricao": "descricao evento1",
+         "medicos": null,
+         "relatorio": null
+      },
+      {
+         "idEvento": 2,
+         "idRepresentante": 1,
+         "titulo": "Titulo do evento2",
+         "tipo": 1,
+         "local": {
+            "latitude": -23.540333,
+            "longitude": -46.553078,
+            "rua": "Rua Cantagalo, 1900",
+            "cep": "03319000",
+            "cidade": "São Paulo",
+            "pais": "Brasil",
+            "bairro": "Tatuapé",
+            "estado": "SP"
+         },
+         "inicio": "2015-05-30 10:00:00",
+         "fim": "2015-05-30 15:00:00",
+         "diaTodo": 0,
+         "url": "www.evento2.com.br",
+         "descricao": "descricao evento2",
+         "medicos": [
+            "medico1@medico.com",
+            "medico2@medico.com"
+         ],
+         "relatorio": null
+      },
+      {
+         "idEvento": 3,
+         "idRepresentante": 1,
+         "titulo": "Titulo do evento3",
+         "tipo": 0,
+         "local": {
+            "latitude": -23.540333,
+            "longitude": -46.553078,
+            "rua": "Rua Cantagalo, 1900",
+            "cep": "03319000",
+            "cidade": "São Paulo",
+            "pais": "Brasil",
+            "bairro": "Tatuapé",
+            "estado": "SP"
+         },
+         "inicio": "2015-05-01 10:00:00",
+         "fim": "2015-05-01 15:00:00",
+         "diaTodo": 0,
+         "url": "www.evento3.com.br",
+         "descricao": "descricao evento3",
+         "medicos": [
+            "medico1@medico.com",
+            "medico2@medico.com"
+         ],
+         "relatorio": {
+            "quantidadePresentes": 10,
+            "budget": 1000,
+            "estacionamento": 150,
+            "equipamento": 50,
+            "sala": 100,
+            "fee": 0
+         }
+      }
+   ]
+}
